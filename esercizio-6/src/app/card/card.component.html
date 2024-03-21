@@ -1,12 +1,15 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
-
-<ul role="list" class="divide-y divide-gray-100"style="margin-left: 20px; margin-right: 20px;"*ngFor="let element of player index as i">
+<h1 align="center">LEAGUE OF LEGENDS</h1>
+<img src="https://i.pinimg.com/originals/d1/b1/1d/d1b11d5e4dbae547ac0d651476cec488.png" style="width: 100px; margin-left: auto; margin-right: auto; border-radius: 20px;">
+<br>
+<h3 class="container">Il nome viene dalla sfera rotante circondata da due torri e lo scopo del gioco è appunto distruggere il Nexus nemico. A volte, si chiama base, emporio o casa. Le corsie in League of Legends sono tre percorsi chiaramente segnati sulla mappa: superiore, centrale e inferiore (chiamato anche bot)</h3>
+<ul role="list" class="divide-y divide-gray-100"style="margin-left: 20px; margin-right: 20px;"*ngFor="let element of player index as i" [ngClass]="{'top':player[i].ruolo == 'top lane','jungle':player[i].ruolo == 'jungle','mid':player[i].ruolo == 'mid lane','adc':player[i].ruolo == 'adc','support':player[i].ruolo == 'support'}" >
     <li class="flex justify-between gap-x-6 py-5">
       <div class="flex min-w-0 gap-x-4">
-        <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="{{element.immagine}}">
+        <img class="h-32 w-32 flex-none rounded-full bg-gray-50" src="{{element.immagine}}">
         <div class="min-w-0 flex-auto">
-          <p class="text-ssm font-semibold leading-6 text-gray-1000">{{element.nickname}}</p>
+          <h5 >{{element.nickname}}</h5>
           <p class="mt-1 truncate text-sm leading-5 text-gray-1000">{{element.team}}</p>
         </div>
       </div>
@@ -15,20 +18,20 @@
         <p class="mt-1 text-sm leading-5 text-gray-1000">{{element.eta}}</p>
         <span class ="badge" [ngSwitch]="player[i].nazionalita">
 
-        <p *ngSwitchCase="'de'" class="mt-1 text-xs leading-5 text-gray-500"><i class="de flag"></i></p>
-        <p *ngSwitchCase="'fr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="fr flag"></i></p>
-        <p *ngSwitchCase="'kr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="kr flag"></i></p>
-        <p *ngSwitchCase="'pl'" class="mt-1 text-xs leading-5 text-gray-500"><i class="pl flag"></i></p>
-        <p *ngSwitchCase="'es'" class="mt-1 text-xs leading-5 text-gray-500"><i class="es flag"></i></p>
-        <p *ngSwitchCase="'dk'" class="mt-1 text-xs leading-5 text-gray-500"><i class="dk flag"></i></p>
-        <p *ngSwitchCase="'hr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="hr flag"></i></p>
-        <p *ngSwitchCase="'se'" class="mt-1 text-xs leading-5 text-gray-500"><i class="se flag"></i></p>
+        <p *ngSwitchCase="'de'" ><i class="de flag"></i></p>
+        <p *ngSwitchCase="'fr'" ><i class="fr flag"></i></p>
+        <p *ngSwitchCase="'kr'" ><i class="kr flag"></i></p>
+        <p *ngSwitchCase="'pl'" ><i class="pl flag"></i></p>
+        <p *ngSwitchCase="'es'" ><i class="es flag"></i></p>
+        <p *ngSwitchCase="'dk'" ><i class="dk flag"></i></p>
+        <p *ngSwitchCase="'hr'" ><i class="hr flag"></i></p>
+        <p *ngSwitchCase="'se'" ><i class="se flag"></i></p>
 
 
 
         </span>
 
-        <button type="button" class="btn btn-success" (click)="premi(i)" style="border-radius: 100%;">maggiori informazioni</button>
+        <button type="button" class="btn btn-success" (click)="premi(i)" >maggiori informazioni</button>
 
 
       </div>

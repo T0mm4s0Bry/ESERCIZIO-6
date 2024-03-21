@@ -19,9 +19,9 @@ player = [
   {posizione : '3', nickname : 'powerofevil', team:'misfits gaming', immagine:'../../assets/PowerOfEvil_2022_Split_2.webp', ruolo:'mid lane', eta:'26', nazionalita:'de', link:'https://liquipedia.net/leagueoflegends/PowerOfEvil'},
   {posizione : '4', nickname : 'rekkles', team:'fnatic', immagine:'../../assets/rekkles.webp', ruolo:'adc', eta:'27', nazionalita:'se', link:'https://liquipedia.net/leagueoflegends/Rekkles'},
   {posizione : '5', nickname : 'ignar', team:'misfits gaming', immagine:'../../assets/ignar.webp', ruolo:'support', eta:'27', nazionalita:'kr', link:'https://liquipedia.net/leagueoflegends/IgNar'},
-  {posizione : '6', nickname : 'expect', team:'G2 esport', immagine:'../../assets/expert.webp', ruolo:'top laner', eta:'28', nazionalita:'kr', link:'https://liquipedia.net/leagueoflegends/Expect'},
+  {posizione : '6', nickname : 'expect', team:'G2 esport', immagine:'../../assets/expert.webp', ruolo:'top lane', eta:'28', nazionalita:'kr', link:'https://liquipedia.net/leagueoflegends/Expect'},
   {posizione : '7', nickname : 'trick', team:'G2 esport', immagine:'../../assets/trickz.webp', ruolo:'jungle', eta:'28', nazionalita:'kr', link:'https://liquipedia.net/leagueoflegends/Trick'},
-  {posizione : '8', nickname : 'perkz', team:'G2 esport', immagine:'../../assets/perckz.jpg', ruolo:'mid laner', eta:'25', nazionalita:'hr', link:'https://liquipedia.net/leagueoflegends/Perkz'},
+  {posizione : '8', nickname : 'perkz', team:'G2 esport', immagine:'../../assets/perckz.jpg', ruolo:'mid lane', eta:'25', nazionalita:'hr', link:'https://liquipedia.net/leagueoflegends/Perkz'},
   {posizione : '9', nickname : 'zven', team:'G2 esport', immagine:'../../assets/zven.webp', ruolo:'adc', eta:'26', nazionalita:'dk', link:'https://liquipedia.net/leagueoflegends/Zven'},
   {posizione : '10', nickname : 'mithy', team:'G2 esport', immagine:'../../assets/mithy.webp', ruolo:'support', eta:'29', nazionalita:'es', link:'https://liquipedia.net/leagueoflegends/Mithy'},
 ]
