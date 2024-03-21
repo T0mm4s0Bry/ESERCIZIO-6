@@ -1,5 +1,6 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<ul role="list" class="divide-y divide-gray-100"style="margin-left: 10px; margin-right: 20px;"*ngFor="let element of player">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+<ul role="list" class="divide-y divide-gray-100"style="margin-left: 10px; margin-right: 20px;"*ngFor="let element of player index as i">
     <li class="flex justify-between gap-x-6 py-5">
       <div class="flex min-w-0 gap-x-4">
         <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="{{element.immagine}}">
@@ -8,9 +9,27 @@
           <p class="mt-1 truncate text-xs leading-5 text-gray-500">{{element.team}}</p>
         </div>
       </div>
-      <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+      <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end" >
         <p class="text-sm leading-6 text-gray-900">{{element.ruolo}}</p>
         <p class="mt-1 text-xs leading-5 text-gray-500">{{element.eta}}</p>
+        <span class ="badge" [ngSwitch]="player[i].nazionalita">
+
+        <p *ngSwitchCase="'de'" class="mt-1 text-xs leading-5 text-gray-500"><i class="de flag"></i></p>
+        <p *ngSwitchCase="'fr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="fr flag"></i></p>
+        <p *ngSwitchCase="'kr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="kr flag"></i></p>
+        <p *ngSwitchCase="'pl'" class="mt-1 text-xs leading-5 text-gray-500"><i class="pl flag"></i></p>
+        <p *ngSwitchCase="'es'" class="mt-1 text-xs leading-5 text-gray-500"><i class="es flag"></i></p>
+        <p *ngSwitchCase="'dk'" class="mt-1 text-xs leading-5 text-gray-500"><i class="dk flag"></i></p>
+        <p *ngSwitchCase="'hr'" class="mt-1 text-xs leading-5 text-gray-500"><i class="hr flag"></i></p>
+        <p *ngSwitchCase="'se'" class="mt-1 text-xs leading-5 text-gray-500"><i class="se flag"></i></p>
+
+
+
+        </span>
+
+        <button type="button" class="btn btn-success" (click)="premi(i)" style="border: radius 35px;">maggiori informazioni</button>
+
+
       </div>
     </li>
     
